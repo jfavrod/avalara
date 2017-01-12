@@ -46,9 +46,6 @@ class TaxRates
     
     public function getTotalRate($address)
     {
-        //print_r($address);
-        //print_r($subtotal);
-        
         $request  = $this->config['url'];
         $request .= ':443/address?';
         $request .= 'street=' . preg_replace('/\s/', '+', $address->street);
